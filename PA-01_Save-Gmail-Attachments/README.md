@@ -1,25 +1,57 @@
 # PA-01 – Menyimpan Lampiran Gmail ke Google Drive
 
-## Description
-Secara otomatis menyimpan lampiran email dari Gmail ke Google Drive menggunakan Power Automate.
+## Deskripsi
+Flow Power Automate yang secara otomatis menyimpan lampiran email dari Gmail ke Google Drive setiap kali email baru masuk, tanpa perlu pengunduhan manual.
+
+Project ini dibuat untuk meningkatkan efisiensi kerja dan mengurangi risiko file terlewat atau hilang.
+
+---
+
+## Flow Logic
+![Flow Logic](Flow-Logic.png)
+
+---
 
 ## Trigger
-- Gmail – Saat email baru tiba
-- Kondisi: Memiliki Lampiran = Ya
+- **Gmail – Saat email baru tiba**
+- **Memiliki Lampiran**: Ya
+- **Sertakan Lampiran**: Ya
+
+---
 
 ## Actions
-- Terapkan ke setiap (Lampiran)
-- Buat file (Google Drive)
+1. **Terapkan ke setiap (Lampiran)**
+   - Melakukan iterasi untuk setiap file lampiran dalam email.
+2. **Buat file (Google Drive)**
+   - Menyimpan setiap lampiran ke folder tujuan di Google Drive.
 
-## Tools
-- Power Automate
+![Flow Screenshot](powerautomate.png)
+---
+
+## Tools & Technologies
+- Microsoft Power Automate
 - Konektor Gmail
 - Konektor Google Drive
 
+---
+
 ## Use Case
-- Otomatisasi faktur
-- Pencadangan email
-- Alur kerja admin
+- Otomatisasi penyimpanan faktur dari email
+- Pencadangan lampiran email
+- Alur kerja administrasi
+- Mengurangi proses manual dan human error
+
+---
 
 ## Result
-Lampiran disimpan secara otomatis tanpa pengunduhan manual.
+![Result](result.png)
+
+Semua lampiran email berhasil disimpan secara otomatis ke Google Drive dengan nama file asli dan format yang sesuai.
+
+---
+
+## Catatan
+- Flow ini dapat dikembangkan lebih lanjut dengan:
+  - Penamaan folder berdasarkan tanggal atau pengirim
+  - Filtering email berdasarkan subject atau label
+  - Notifikasi jika proses penyimpanan gagal
