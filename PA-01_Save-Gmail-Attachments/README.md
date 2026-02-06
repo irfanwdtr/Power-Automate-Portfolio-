@@ -50,8 +50,3 @@ Semua lampiran email berhasil disimpan secara otomatis ke Google Drive dengan na
 
 ---
 
-## Catatan
-- Flow ini dapat dikembangkan lebih lanjut dengan:
-  - Penamaan folder berdasarkan tanggal atau pengirim
-  - Filtering email berdasarkan subject atau label
-  - Notifikasi jika proses penyimpanan gagal
