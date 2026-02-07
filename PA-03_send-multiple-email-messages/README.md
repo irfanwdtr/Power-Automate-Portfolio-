@@ -20,7 +20,7 @@ Diagram alur kerja flow:
 - Flow dijalankan secara manual untuk mengontrol waktu dan jumlah email yang dikirim
 
 ---
-
+![Logic](logic.png)
 ## Data Source
 - **Excel Online (Business)**
 - Data disimpan dalam bentuk **Table** dengan nama `tblEmail`
